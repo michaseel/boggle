@@ -13,6 +13,7 @@ setRemBase();
 window.addEventListener('resize', setRemBase);
 
 
+/* web worker */
 
 var worker = new Worker('worker.js');
 
@@ -27,3 +28,16 @@ boggleBtn.addEventListener('click', function() {
   fieldsize = fieldSizeInput.value;
   worker.postMessage(fieldsize);
 });
+
+
+/* service worker for offline capability */
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+    // Registration was successful
+    console.log('ServiceWorker registration successful with scope: ',    registration.scope);
+  }).catch(function(err) {
+    // registration failed :(
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}

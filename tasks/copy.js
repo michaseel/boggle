@@ -44,7 +44,8 @@ module.exports = {
         cwd: '<%= folders.tmp %>',
         dest: '.',
         src: [
-          'worker.js'
+          'worker.js',
+          'serviceworker.js'
         ]
       }
     ]
