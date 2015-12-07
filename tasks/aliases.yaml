@@ -1,0 +1,58 @@
+default:
+  - serve
+
+serve:
+  - clean:server
+  - injector
+  - wiredep
+  - sass
+  - postcss:server
+  - babel
+  - express
+  - open
+  - watch
+
+build:
+  - clean:build
+  - injector
+  - wiredep
+  - babel
+  - sass
+  - postcss:dist
+  - jade
+  - copy:dist
+  - useminPrepare
+  - concat
+  - uglify
+  - rev
+  - usemin
+  - htmlmin
+  - inline
+  - copy:ghPages
+
+test:
+  - eslint
+  - postcss:stylelint
+  - build
+  - connect:test
+  - galen:local
+
+release:
+  - bump-only
+  - changelog
+  - bump-commit
+
+release:patch:
+  - bump-only:patch
+  - changelog
+  - bump-commit
+
+release:minor:
+  - bump-only:minor
+  - changelog
+  - bump-commit
+
+release:major:
+  - bump-only:major
+  - changelog
+  - bump-commit

@@ -1,0 +1,8 @@
+{
+  "name": "essensliste",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "^4"
+  },
+  "devDependencies": {}
+}

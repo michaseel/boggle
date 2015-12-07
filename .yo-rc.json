@@ -1,0 +1,10 @@
+{
+  "generator-atomic": {
+    "appname": "essensliste",
+    "projectName": "Essensliste",
+    "namespace": "kbe",
+    "author": "Michael Seel",
+    "cssPreprocessor": "sass",
+    "cssPreprocessorExtension": "scss"
+  }
+}
