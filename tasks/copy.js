@@ -29,14 +29,25 @@ module.exports = {
   },
   ghPages: {
     files: [{
-      expand: true,
-      dot: true,
-      cwd: '<%= folders.dist %>',
-      dest: '.',
-      src: [
-        'index.html',
-        '.htaccess'
-      ]
-    }]
+        expand: true,
+        dot: true,
+        cwd: '<%= folders.dist %>',
+        dest: '.',
+        src: [
+          'index.html',
+          '.htaccess'
+        ]
+      },
+      {
+        expand: true,
+        dot: true,
+        cwd: '<%= folders.tmp %>',
+        dest: '.',
+        src: [
+          'worker.js'
+        ]
+      }
+    ]
+
   }
 };

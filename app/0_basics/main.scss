@@ -93,6 +93,8 @@
 }
 
 .btn {
+  cursor: pointer;
+  user-select: none;
   margin: 1rem;
   padding: 0 2rem;
   font-size: 4rem;
