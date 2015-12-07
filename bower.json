@@ -1,5 +1,5 @@
 {
-  "name": "essensliste",
+  "name": "boggle",
   "version": "0.0.0",
   "dependencies": {
     "bootstrap": "^4"
