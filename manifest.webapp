@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "name": "Boggle",
+  "launch_path": "index.html",
+  "description": "Super Big Boggle Spiel",
+  "icons": {
+    "96": "icons/android-chrome-96x96.png",
+    "144": "icons/android-chrome-144x144.png",
+    "192": "icons/android-chrome-192x192.png"
+  },
+  "developer": {
+    "name": "Micha Seel",
+    "url": "http://michaseel.de"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "de",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Boggle",
+      "description": "Super Big Boggle Game"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 'use strict';
 
 var CACHE_NAME = 'main-cache';
-var urlsToCache = ['/', '/worker.js'];
+var urlsToCache = ['index.html', 'worker.js'];
 
 self.addEventListener('install', function (event) {
   // Perform install steps

@@ -1,7 +1,7 @@
 var CACHE_NAME = 'main-cache';
 var urlsToCache = [
-  '/',
-  '/worker.js'
+  'index.html',
+  'worker.js'
 ];
 
 self.addEventListener('install', function(event) {
